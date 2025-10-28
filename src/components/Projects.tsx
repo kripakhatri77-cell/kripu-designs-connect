@@ -1,8 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
+  const navigate = useNavigate();
+  
   const projects = [
     {
       title: "Floral Hetauda Website",
@@ -11,6 +14,7 @@ const Projects = () => {
       process: "Market Research → Wireframes → Visual Design → Prototyping",
       impact: "Enhanced brand presence and user engagement",
       color: "from-primary/20 to-accent/20",
+      link: "/projects/floral-hetauda",
     },
     {
       title: "Smoothie Animation Dashboard",
@@ -19,6 +23,7 @@ const Projects = () => {
       process: "User Flow Analysis → Animation Strategy → Interactive Prototyping",
       impact: "Improved user retention with engaging microinteractions",
       color: "from-secondary/20 to-primary/20",
+      link: "/projects/smoothie-dashboard",
     },
     {
       title: "Hotel Finding App",
@@ -27,6 +32,7 @@ const Projects = () => {
       process: "Competitive Analysis → Journey Mapping → High-Fidelity Mockups",
       impact: "Streamlined booking process and increased conversions",
       color: "from-accent/20 to-secondary/20",
+      link: "/projects/hotel-finding-app",
     },
   ];
 
@@ -78,6 +84,7 @@ const Projects = () => {
                 <Button 
                   variant="ghost" 
                   className="w-full group/btn justify-between"
+                  onClick={() => navigate(project.link)}
                 >
                   View Case Study
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-smooth" />
