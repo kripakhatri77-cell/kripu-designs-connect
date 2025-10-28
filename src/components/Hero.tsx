@@ -32,7 +32,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Hi, I'm <span className="font-semibold text-foreground">Kripu</span> — a UI/UX Designer passionate about crafting meaningful digital experiences through user research, intuitive design, and creative problem-solving.
+          Hi, I'm <span className="font-semibold text-foreground">Kripa Khatri</span> — a UI/UX Designer passionate about crafting meaningful digital experiences through user research, intuitive design, and creative problem-solving.
         </p>
 
         {/* CTA Buttons */}
