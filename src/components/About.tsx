@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const About = () => {
   const skills = [
-    { icon: Figma, title: "Design Tools", description: "Figma, Adobe XD, Illustrator" },
+    { icon: Figma, title: "Design Tools", description: "Figma" },
     { icon: Palette, title: "Visual Design", description: "UI Design, Prototyping, Design Systems" },
     { icon: Users, title: "User Research", description: "Interviews, Personas, User Testing" },
     { icon: Lightbulb, title: "Problem Solving", description: "Wireframing, Information Architecture" },
@@ -11,13 +11,6 @@ const About = () => {
 
   const tools = [
     "Figma",
-    "Adobe XD",
-    "Adobe Illustrator",
-    "Notion",
-    "Miro",
-    "Principle",
-    "InVision",
-    "Maze",
   ];
 
   return (
